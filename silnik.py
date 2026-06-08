@@ -170,7 +170,12 @@ def start_gierki():
 
         # ========ARENA========
         elif komenda == "walcz" and obecna_lokacja.nazwa == "Koloseum":
-            walka(gracz)
+            wynik_walki = walka(gracz)
+
+            if wynik_walki == "teleport_do_ludus":
+                obecna_lokacja = obecna_lokacja.sciezki["targ"].sciezki["szkola"]
+                print(
+                    "\n[Budzisz się obolały w swoim łóżku w Ludusie. Przynajmniej żyjesz...]")
 
         # ========KATAKUMBY========
         elif komenda == "zejdz glebiej" and obecna_lokacja.nazwa == "Mroczne Katakumby":

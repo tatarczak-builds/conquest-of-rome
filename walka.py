@@ -77,6 +77,8 @@ def walka(gracz):
         gracz.chwala += wrog.nagroda_chwala
         gracz.walki_na_arenie += 1
 
+        return "wygrana"
+
     else:
         print("\n" + "="*40)
         print(" PORAŻKA... Padasz na piasek areny, krwawiąc z ran.")
@@ -85,7 +87,8 @@ def walka(gracz):
         print(" Strażnicy wloką Twoje nieprzytomne ciało do Ludusu...")
         print("="*40)
 
-        obecna_lokacja = ludus
         gracz.zloto = max(0, gracz.zloto // 2)
         gracz.chwala = max(0, gracz.chwala // 2)
         gracz.dodaj_exp(wrog.nagroda_exp // 2)
+
+        return "teleport_do_ludus"
