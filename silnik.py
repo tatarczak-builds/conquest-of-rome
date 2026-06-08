@@ -195,7 +195,7 @@ def start_gierki():
                     print(
                         " Mężczyzna podchodzi bliżej, ściąga kaptur i kładzie Ci rękę na ramieniu.")
                     print(
-                        " 'Działamy w mroku, by służyć światłu. Witaj w Bractwie Ukrytych, bracie.'")
+                        " 'Działamy w mroku, by służyć światłości. Witaj w Bractwie Ukrytych, bracie.'")
                     print(
                         " 'Nasz wspólny wróg to Cesarz. Przyjmij to złoto na lepszy rynsztunek i poznaj nasze sekrety!'")
                     print("*"*50)
@@ -203,6 +203,7 @@ def start_gierki():
                     gracz.atk += 20
                     gracz.zwinnosc += 20
                     gracz.zloto += 300
+
                     print(
                         f"\n[ ZYSKUJESZ: +20 Atak, +20 Zwinność, +300 Złota! ]")
 
